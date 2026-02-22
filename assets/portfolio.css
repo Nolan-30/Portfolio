@@ -243,3 +243,85 @@ h1 {
     transform: translateY(-5px);
   }
 }
+
+/* --- Projets --- */
+
+.section-page {
+  padding: 6rem 1rem;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.titre-section {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  letter-spacing: -1px;
+}
+
+.grille-projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.carte-projet {
+  background: var(--fond-carte);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.carte-projet:hover {
+  transform: scale(1.02);
+  border-color: var(--couleur-texte);
+}
+
+.titre-carte {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: var(--sous-texte);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.carte-projet h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.carte-projet p {
+  color: var(--sous-texte);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.stack-used {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stack-used span {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 20px;
+}
+
+.lien-penthouse {
+  margin-top: 10%;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+}
+
+.lien-penthouse a {
+  color: var(--couleur-texte);
+  text-decoration: underline;
+}
