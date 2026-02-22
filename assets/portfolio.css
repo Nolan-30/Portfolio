@@ -325,3 +325,52 @@ h1 {
   color: var(--couleur-texte);
   text-decoration: underline;
 }
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 5rem 1rem;
+  border-top: 1px solid var(--couleur-bordure);
+}
+
+.lien-email {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--couleur-texte);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.lien-email:hover {
+  border-bottom: 2px solid var(--couleur-texte);
+}
+
+.rs {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.rs a {
+  color: var(--couleur-texte);
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: transform 0.3s;
+}
+
+.rs a:hover {
+  transform: scale(1.1);
+}
+
+.rs img {
+  border-radius: 10px;
+}
+
+.droits-auteur {
+  font-size: 0.8rem;
+  color: var(--sous-texte);
+}
