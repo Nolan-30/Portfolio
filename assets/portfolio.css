@@ -292,45 +292,27 @@ h1 {
 
 .stack-used {
   display: flex;
-  flex-wrap: wrap;
-
-  gap: 0.5rem;
+  gap: 20px;
 }
 
 .stack-used span {
-  font-size: 0.75rem;
-  padding: 0.3rem 0.8rem;
-  border: 1px solid var(--couleur-bordure);
-  border-radius: 20px;
-}
-
-.stack-used2 {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 60px;
+  border-radius: 50%; /* pr faire un cercle parfait */
 
-  gap: 0.5rem;
+  border: 1px solid var(--couleur-bordure);
 }
 
-.html img {
-  margin-top: 15%;
-}
-
-.css img {
-  margin-top: 15%;
+.stack-used span img {
+  height: 24px;
+  width: auto;
 }
 
 .js img {
-  margin-top: 25%;
-  border-radius: 5px;
-}
-
-.sql img {
-  margin-top: 15%;
-  border-radius: 5px;
-}
-.aos {
-  display: flex;
-  align-items: center;
+  border-radius: 3px;
 }
 
 /* Liens pour voir les projets */
@@ -452,7 +434,7 @@ footer {
 .mail {
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  padding: 10px 20px; /* Espace autour du texte pour créer le bandeau */
+  padding: 10px 20px;
   display: inline-block;
   font-size: 1.5rem;
 }
