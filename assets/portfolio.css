@@ -293,6 +293,7 @@ h1 {
 .stack-used {
   display: flex;
   flex-wrap: wrap;
+
   gap: 0.5rem;
 }
 
@@ -301,6 +302,35 @@ h1 {
   padding: 0.3rem 0.8rem;
   border: 1px solid var(--couleur-bordure);
   border-radius: 20px;
+}
+
+.stack-used2 {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.5rem;
+}
+
+.html img {
+  margin-top: 15%;
+}
+
+.css img {
+  margin-top: 15%;
+}
+
+.js img {
+  margin-top: 25%;
+  border-radius: 5px;
+}
+
+.sql img {
+  margin-top: 15%;
+  border-radius: 5px;
+}
+.aos {
+  display: flex;
+  align-items: center;
 }
 
 /* Liens pour voir les projets */
