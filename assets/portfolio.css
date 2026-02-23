@@ -1,4 +1,4 @@
-/* --- Variables pour le thème --- */
+/* --- Variables  pour le thème --- */
 :root {
   --couleur-fond: #ffffff;
   --couleur-texte: #0f0f0f;
@@ -16,8 +16,9 @@
   --couleur-bordure: #27272a;
   --sous-texte: #a1a1aa;
 }
-
-/* --- Propriétés de base --- */
+/* --------------------------- */
+/* --- Proprietes de base --- */
+/* ------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -27,13 +28,13 @@
     color 0.3s ease;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
+a,
+li,
+ul,
+ol {
   list-style: none;
+  text-decoration: none;
+  color: white;
 }
 
 html {
@@ -48,7 +49,10 @@ body {
   overflow-x: hidden;
 }
 
+/* ------------------ */
 /* --- Navigation --- */
+/* -------------------*/
+
 .barre-navigation {
   position: fixed;
   top: 0;
@@ -58,7 +62,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: rgba(var(--couleur-fond), 0.8);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); /* flou au niveau du header lors du scroll */
   z-index: 1000;
   border-bottom: 1px solid transparent;
 }
@@ -69,6 +73,10 @@ body {
   letter-spacing: -1px;
 }
 
+.point {
+  color: white;
+}
+
 .liens-navigation {
   display: flex;
   align-items: center;
@@ -76,6 +84,8 @@ body {
 }
 
 .liens-navigation a {
+  text-decoration: none;
+  color: var(--couleur-texte);
   font-size: 0.9rem;
   font-weight: 500;
   opacity: 0.7;
@@ -101,7 +111,10 @@ body {
   transform: rotate(15deg);
 }
 
-/* --- Accueil --- */
+/* -------------------- */
+/* ---  Accueil ------ */
+/* ------------------ */
+
 .banniere-accueil {
   height: 100vh;
   display: flex;
@@ -124,6 +137,11 @@ h1 {
 .texte-degrade {
   color: transparent;
   -webkit-text-stroke: 1px var(--couleur-texte);
+  position: relative;
+}
+
+[data-theme="light"] .texte-degrade {
+  -webkit-text-stroke: 1px #000;
 }
 
 .banniere-accueil p {
@@ -134,14 +152,18 @@ h1 {
 }
 
 .groupe-boutons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
+  .groupe-boutons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    width: auto;
+  }
 }
 
 .bouton {
   padding: 0.8rem 2rem;
   border-radius: 50px;
+  text-decoration: none;
   font-weight: 600;
   transition:
     transform 0.2s,
@@ -162,7 +184,35 @@ h1 {
   transform: translateY(-3px);
 }
 
-/* --- Scroll Indicator --- */
+/* --------------- */
+/* --- Scroll---- */
+/* --------------*/
+
+.apparition {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.apparition.actif {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delai-1 {
+  transition-delay: 0.1s;
+}
+.delai-2 {
+  transition-delay: 0.2s;
+}
+.delai-3 {
+  transition-delay: 0.3s;
+}
+
+/* ------------------------------ */
+/* --- Indicateur Défilement --- */
+/* ---------------------------- */
+
 .indicateur-defilement {
   position: absolute;
   bottom: 2rem;
@@ -191,11 +241,13 @@ h1 {
   }
 }
 
+/* --------------- */
 /* --- Projets --- */
+/* --------------- */
+
 .section-page {
   padding: 6rem 1rem;
 }
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -219,9 +271,6 @@ h1 {
   border: 1px solid var(--couleur-bordure);
   border-radius: 1.5rem;
   padding: 2rem;
-  transition:
-    transform 0.3s,
-    border-color 0.3s;
 }
 
 .carte-projet:hover {
@@ -252,35 +301,60 @@ h1 {
 
 .stack-used {
   display: flex;
-  gap: 10px;
-  margin-bottom: 1.5rem;
+  gap: 20px;
 }
 
 .stack-used span {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px 15px;
-  border-radius: 20px;
-  font-size: 0.8rem;
+  height: 50px;
+  width: 60px;
+  border-radius: 50%; /* pr faire un cercle parfait */
+
   border: 1px solid var(--couleur-bordure);
-  background: var(--couleur-fond);
 }
 
-/* --- Liens "Voir le projet" corrigés --- */
-.lien-projet {
-  margin-top: 1rem;
-  display: inline-block;
+.stack-used span img {
+  height: 24px;
+  width: auto;
 }
 
-.lien-projet a {
+.js img {
+  border-radius: 3px;
+}
+/* ---------------------------- */
+/* Liens pour voir les projets */
+/* ---------------------------*/
+
+.lien-power-of-memory {
   color: var(--couleur-texte);
-  font-weight: 700;
   position: relative;
+  font-weight: 700;
   padding-bottom: 2px;
 }
 
-.lien-projet a::after {
+.lien-power-of-memory,
+.lien-penthouse,
+.lien-escape,
+.lien-bataille-naval,
+.lien-gladiator {
+  margin-top: 5%;
+  margin-left: 1%;
+}
+
+.lien-power-of-memory,
+.lien-penthouse,
+.lien-escape,
+.lien-bataille-naval,
+.lien-gladiator a {
+  color: var(--couleur-texte);
+  position: relative;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+
+.lien-penthouse a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -290,17 +364,112 @@ h1 {
   background-color: var(--couleur-texte);
 }
 
-/* --- Footer --- */
+.lien-penthouse a {
+  color: var(--couleur-texte);
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+
+.lien-penthouse a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--couleur-texte);
+}
+
+.lien-escape a {
+  color: var(--couleur-texte);
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+
+.lien-escape a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--couleur-texte);
+}
+
+.lien-bataille-naval a {
+  color: var(--couleur-texte);
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+
+.lien-bataille-naval a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--couleur-texte);
+}
+
+.lien-gladiator {
+  margin-top: 5%;
+  margin-left: 1%;
+}
+
+.lien-gladiator a {
+  color: var(--couleur-texte);
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+
+.lien-gladiator a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--couleur-texte);
+}
+/* ------------------ */
+/* ---- FOOTER ----- */
+/* --------------- */
 footer {
   text-align: center;
   padding: 5rem 1rem;
   border-top: 1px solid var(--couleur-bordure);
 }
 
-.mail {
+.lien-email {
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 1rem 0;
+  color: var(--couleur-texte);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.lien-email:hover {
+  border-bottom: 2px solid var(--couleur-texte);
+}
+
+.mail {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 1.5rem;
 }
 
 .rs {
@@ -310,9 +479,15 @@ footer {
   gap: 1.5rem;
 }
 
+.rs a {
+  color: var(--couleur-texte);
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: transform 0.5s;
+}
+
 .rs a:hover {
   transform: scale(1.1);
-  transition: transform 0.3s;
 }
 
 .droits-auteur {
@@ -320,19 +495,42 @@ footer {
   color: var(--sous-texte);
 }
 
-/* --- Responsivité --- */
+/* --------------------- */
+/* --- RESPONSIVITE --- */
+/* --------------------- */
+
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2.5rem;
-  }
   .barre-navigation {
     padding: 1rem 3%;
   }
+
   .liens-navigation {
-    gap: 1rem;
+    gap: 1rem; /* rapprochement de sliens */
   }
+
+  .logo {
+    font-size: 1rem; /* reduction de la taille du logo */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* reduction de la taille du titre de poste */
+    margin-bottom: 1rem;
+  }
+
+  .banniere-accueil p {
+    font-size: 1rem;
+    padding: 0 5%;
+  }
+
+  /* empilat° des boutons */
   .groupe-boutons {
-    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
     width: 100%;
+  }
+
+  .bouton {
+    text-align: center;
   }
 }
