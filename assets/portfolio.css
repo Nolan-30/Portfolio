@@ -258,18 +258,14 @@ h1 {
   font-weight: 700;
   margin-bottom: 3rem;
   letter-spacing: -1px;
+  text-decoration: underline;
 }
 
 .grille-projets {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-}
-
-.grille-projets-a-venir {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  width: 100%;
 }
 
 .carte-projet {
@@ -277,11 +273,26 @@ h1 {
   border: 1px solid var(--couleur-bordure);
   border-radius: 1.5rem;
   padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .carte-projet:hover {
   transform: scale(1.02);
   border-color: var(--couleur-texte);
+}
+
+.carte-projet3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.carte-projet p {
+  color: var(--sous-texte);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
 }
 
 .titre-carte {
@@ -294,15 +305,10 @@ h1 {
   font-weight: 700;
 }
 
-.carte-projet h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.carte-projet p {
-  color: var(--sous-texte);
-  font-size: 0.95rem;
-  margin-bottom: 1.5rem;
+.projet-a-venir h2 {
+  /* ajt d'espace en haut et en bas*/
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .stack-used {
@@ -387,13 +393,25 @@ h1 {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 0;
   height: 2px;
   background-color: var(--couleur-texte);
+  transition: width 1s ease-in-out;
 }
+
+/* ajt de l'effet de survol sur "voir le projet" */
+
+.lien-power-of-memory a:hover::after,
+.lien-penthouse a:hover::after,
+.lien-escape a:hover::after,
+.lien-bataille-naval a:hover::after,
+.lien-gladiator a:hover::after {
+  width: 100%; /* Le trait prend tt la largeur du txt */
+}
+
 /* ------------------ */
 /* ---- FOOTER ----- */
-/* --------------- */
+/* ---------------- */
 footer {
   text-align: center;
   padding: 5rem 1rem;
@@ -455,6 +473,11 @@ footer {
     padding: 1rem 3%;
   }
 
+  .titre-section {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
   .liens-navigation {
     gap: 1rem; /* rapprochement de sliens */
   }
@@ -483,5 +506,18 @@ footer {
 
   .bouton {
     text-align: center;
+  }
+
+  .container {
+    padding: 0 1rem; /* ajt d'une ptit marge sur les cotes */
+  }
+
+  .carte-projet {
+    width: 100%;
+  }
+
+  .projet-a-venir h2 {
+    /* augmententation de l'espace*/
+    margin-top: 20%;
   }
 }
