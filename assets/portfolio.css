@@ -266,6 +266,12 @@ h1 {
   gap: 2rem;
 }
 
+.grille-projets-a-venir {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
 .carte-projet {
   background: var(--fond-carte);
   border: 1px solid var(--couleur-bordure);
@@ -317,6 +323,29 @@ h1 {
 
 .stack-used span img {
   height: 24px;
+  width: auto;
+}
+
+/*  stack de Penthouse V2*/
+
+.stack-used-penthouse-a-venir {
+  display: flex;
+  gap: 20px;
+}
+
+.stack-used-penthouse-a-venir span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 60px;
+  border-radius: 50%; /* pr faire un cercle parfait */
+
+  border: 1px solid var(--couleur-bordure);
+}
+
+.stack-used-penthouse-a-venir span img {
+  height: 35px;
   width: auto;
 }
 
