@@ -152,12 +152,10 @@ h1 {
 }
 
 .groupe-boutons {
-  .groupe-boutons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    width: auto;
-  }
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: auto;
 }
 
 .bouton {

@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     htmlElement.setAttribute("data-theme", "dark");
   }
 
-  // Quand on click sur le boutton
+  // qd on click sur le boutton
   boutonTheme.addEventListener("click", () => {
     const themeActuel = htmlElement.getAttribute("data-theme");
     const nouveauTheme = themeActuel === "dark" ? "light" : "dark";
