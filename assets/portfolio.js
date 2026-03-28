@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       root: null,
-      threshold: 0.85,
+      threshold: 0.15,
       rootMargin: "0px",
     },
   );

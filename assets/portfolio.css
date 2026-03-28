@@ -40,7 +40,10 @@ ol {
 html {
   scroll-behavior: smooth;
 }
-
+body,
+p {
+  font-size: 16px;
+}
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--couleur-fond);
@@ -282,11 +285,6 @@ h1 {
   border-color: var(--couleur-texte);
 }
 
-.carte-projet3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .carte-projet p {
   color: var(--sous-texte);
   font-size: 0.95rem;
@@ -301,6 +299,19 @@ h1 {
   color: var(--sous-texte);
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.img-projet img {
+  border-radius: 10px;
+  /* taille fixe pr chaque image d'un projet*/
+  height: 200px;
+  width: 300px;
+  border: 1px solid var(--couleur-bordure);
+}
+
+.img-projet1 img {
+  border-radius: 10px;
+  /* taille fixe pr chaque image d'un projet*/
 }
 
 .projet-a-venir h2 {
@@ -417,7 +428,7 @@ footer {
 }
 
 .lien-email {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--couleur-texte);
   text-decoration: none;
@@ -436,7 +447,7 @@ footer {
   font-weight: 700;
   padding: 10px 20px;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .rs {
@@ -497,12 +508,15 @@ footer {
   /* empilat° des boutons */
   .groupe-boutons {
     display: flex;
-    gap: 1rem;
+
     justify-content: center;
+    flex-direction: row; /* Force la ligne au lieu de la colonne */
     width: 100%;
+    gap: 1rem;
   }
 
   .bouton {
+    font-size: 14px;
     text-align: center;
   }
 
@@ -517,5 +531,14 @@ footer {
   .projet-a-venir h2 {
     /* augmententation de l'espace*/
     margin-top: 20%;
+  }
+  .contenu-pied-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .mail {
+    font-size: 1rem;
   }
 }
