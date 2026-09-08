@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./css/Footer.css";
+import "./styles/Footer.css";
 import SplitText from "../animations/SplitText";
 import { Dock, DockIcon } from "../animations/Dock";
 

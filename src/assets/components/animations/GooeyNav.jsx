@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from "react";
-import "../css/animations/GooeyNav.css";
+import "../styles/animations/GooeyNav.css";
 
 const GooeyNav = ({
   items,

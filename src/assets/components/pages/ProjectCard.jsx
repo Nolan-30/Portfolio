@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "./css/Project.css";
+import "./styles/Project.css";
 import GradientText from "../animations/GradientText";
 import StarBorder from "../animations/StarBorder";
 import BorderGlow from "../animations/BorderGlow";
@@ -112,7 +112,6 @@ export default function ProjectCard({
               <span className="date-projet">{date}</span>
             </div>
 
-            {/* On sort l'image de .titre-carte et on lui met sa classe dédiée */}
             {image && (
               <div className="img-projet">
                 <img src={image} alt={title} />

@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import * as THREE from "three";
-import "../css/animations/LightPillar.css";
+import "../styles/animations/LightPillar.css";
 
 const LightPillar = ({
   topColor = "#5227FF",

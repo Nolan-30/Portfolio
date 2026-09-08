@@ -56,7 +56,8 @@
   cursor: pointer;
   transform: scale(1.03);
 
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); */
+  box-shadow: 0 0 10px rgba(51, 51, 51, 0.5);
 }
 
 .carte-projet p {
@@ -127,6 +128,25 @@
   width: 100%;
 }
 
+.lien-projet {
+  margin-top: 5%;
+}
+
+.lien-projet a {
+  color: var(--couleur-texte);
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+
+.carte-projet h3 {
+  color: var(--couleur-texte);
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
 .stack-used {
   display: flex;
   flex-wrap: wrap; /* va a la ligne si y a plus de place */
@@ -166,32 +186,6 @@
   width: 100%; /* Le trait prend tt la largeur du txt */
 }
 
-.lien-projet {
-  margin-top: 5%;
-}
-
-.lien-projet a {
-  color: var(--couleur-texte);
-  text-decoration: none;
-  position: relative;
-  font-weight: 700;
-  padding-bottom: 2px;
-}
-
-.carte-projet h3 {
-  color: var(--couleur-texte);
-  font-size: 1.3rem;
-  font-weight: 900;
-  margin-bottom: 0.5rem;
-}
-
-.placement-stack {
-  margin-top: -10%;
-}
-.placement-stack p {
-  font-size: 1.5rem;
-}
-
 /* RESPONSIVITE */
 
 @media (max-width: 768px) {
@@ -206,8 +200,5 @@
   .carte-projet {
     display: flex;
     justify-content: center;
-  }
-  .stack-used {
-    font-size: 0.8rem;
   }
 }

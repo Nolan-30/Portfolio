@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import "./css/Header.css";
+import "./styles/Header.css";
 import GradientText from "../animations/GradientText";
 import Profile from "../icons/Profile";
 

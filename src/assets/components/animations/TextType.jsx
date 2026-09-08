@@ -9,7 +9,7 @@ import {
   useCallback,
 } from "react";
 import { gsap } from "gsap";
-import "../css/animations/TextType.css";
+import "../styles/animations/TextType.css";
 
 const TextType = ({
   text,

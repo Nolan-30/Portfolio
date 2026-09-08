@@ -64,8 +64,9 @@
 }
 
 .form-group label {
-  font-weight: 700;
+  font-weight: 900;
   color: #a78bfa;
+  font-size: 1.5rem;
 }
 
 .contact-form input,
@@ -78,6 +79,10 @@
   font-family: "Inter", sans-serif;
   outline: none;
   transition: border-color 0.3s ease;
+}
+
+.contact-form textarea {
+  height: 200px;
 }
 
 .contact-form input:focus,

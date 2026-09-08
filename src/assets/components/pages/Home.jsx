@@ -1,4 +1,4 @@
-import "./css/Home.css";
+import "./styles/Home.css";
 import { motion } from "framer-motion";
 import LightPillar from "../animations/LightPillar";
 import TextType from "../animations/TextType";
@@ -161,26 +161,11 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.8 }}
           >
             <a href="#" className="icon-link">
-              <img src="images/react.png" alt="react" height={30} width={25} />
+              <img src="images/react.png" alt="react" />
             </a>
 
-            {/* test des techno dans lesquelles je veux exceller  */}
-
             <a href="#" className="icon-link">
-              <img
-                src="images/tailwind.png"
-                alt="Tailwind"
-                height={30}
-                width={25}
-              />
-            </a>
-            <a href="#" className="icon-link">
-              <img
-                src="images/nodejs.png"
-                alt="Node.js"
-                height={30}
-                width={25}
-              />
+              <img src="images/tailwind.png" alt="Tailwind" />
             </a>
 
             {/* Bouton CV */}

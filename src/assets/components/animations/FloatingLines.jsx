@@ -11,7 +11,7 @@ import {
   WebGLRenderer,
 } from "three";
 
-import "../css/animations/FloatingLines.css";
+import "../styles/animations/FloatingLines.css";
 
 const vertexShader = `
 precision highp float;

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
-import "../css/animations/PillNav.css";
+import "../styles/animations/PillNav.css";
 
 const PillNav = ({
   logo,

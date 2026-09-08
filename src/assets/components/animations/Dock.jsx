@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
-import "../css/animations/Dock.css";
+import "../styles/animations/Dock.css";
 
 const DEFAULT_SIZE = 40;
 const DEFAULT_MAGNIFICATION = 60;

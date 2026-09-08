@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 import { Renderer, Program, Mesh, Triangle, Vec2 } from "ogl";
-import "../css/animations/DarkVeil.css";
+import "../styles/animations/DarkVeil.css";
 
 const vertex = `
 attribute vec2 position;

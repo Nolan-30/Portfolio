@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import "./css/Contact.css";
+import "./styles/Contact.css";
 import WebThreads from "../animations/WebThreads";
 
 const Contact = () => {
@@ -12,7 +12,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     setStatusMessage("");
-
+    home;
     const SERVICE_ID = "service_pt0wilp";
     const TEMPLATE_ID = "template_hlqgz28";
     const PUBLIC_KEY = "dJQ_EgGvhSFV0nufM";
