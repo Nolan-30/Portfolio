@@ -241,6 +241,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 0.5rem;
   }
 
   .badge {
@@ -257,6 +258,7 @@ h1 {
   }
 
   .subtitle {
+    font-size: 0.8rem;
     margin-left: -5%;
   }
 
@@ -264,17 +266,18 @@ h1 {
     font-size: 0.5rem;
   }
   .bouton-secondaire {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
 
   .languages-icons {
-    gap: 1rem;
+    gap: 2rem;
   }
   .icon-link {
     width: 40px;
     height: 40px;
   }
   .btn-download {
+    padding: 0.5rem 1.3rem;
     font-size: 0.5rem;
   }
 }
