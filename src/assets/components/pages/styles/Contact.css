@@ -8,6 +8,8 @@
   overflow: hidden;
   isolation: isolate;
   background: radial-gradient(circle at center, #620082 0%, #0d0010 100%);
+  padding: 4rem 1rem;
+  box-sizing: border-box;
 }
 
 .contact-bg {
@@ -29,38 +31,49 @@
   gap: 4rem;
   align-items: center;
 }
+
 /* Partie gauche */
 .contact-left {
   flex: 1;
-  margin: auto;
-  margin-right: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-left h1 {
   font-size: 3rem;
   font-weight: 900;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 1rem 0;
   background: linear-gradient(90deg, #a78bfa, #f472b6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.contact-left img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Partie droite */
 .contact-right {
   flex: 1.5;
+  width: 100%;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  width: 100%;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 100%;
 }
 
 .form-group label {
@@ -79,10 +92,12 @@
   font-family: "Inter", sans-serif;
   outline: none;
   transition: border-color 0.3s ease;
+  box-sizing: border-box;
 }
 
 .contact-form textarea {
   height: 200px;
+  resize: vertical;
 }
 
 .contact-form input:focus,
@@ -116,7 +131,6 @@
     transform 0.2s ease,
     opacity 0.2s ease;
   align-self: flex-start;
-
   position: relative;
   z-index: 11;
 }
@@ -126,18 +140,74 @@
   opacity: 0.9;
 }
 
-/* RESPONSIVITE */
+/* ========================================= */
+/*          RESPONSIVITE           */
+/* ========================================= */
+
 @media (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 1.5rem;
+  }
+
   .contact-container {
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
+  }
+
+  .contact-left {
+    margin-right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .contact-left h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .contact-left img {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
   }
 
   .contact-right {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    align-items: center;
+  }
+
+  .form-group {
+    align-items: center;
+  }
+
+  .form-group label {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contact-form textarea {
+    height: 140px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    max-width: 200px;
+    align-self: center;
+    text-align: center;
   }
 }
