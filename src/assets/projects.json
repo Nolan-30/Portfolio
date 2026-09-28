@@ -1,37 +1,46 @@
 [
   {
+    "id": 0,
+    "incoming": false,
+    "label": "Projet Professionel",
+    "image": "images/mbs.png",
+    
+    "title": "MBS Plomberie",
+    "iconName": "heart",
+    "description": "Vitrine web moderne dédiée à un artisan plombier-chauffagiste, conçue pour maximiser la conversion client.",
+    "githubUrl": "https://mbs-zeta.vercel.app/",
+    "stack": [
+      {
+        "name": "React"
+      },
+      {
+        "name": "Tailwind"
+      }
+    ]
+  },
+  {
     "id": 1,
     "incoming": false,
     "label": "Projet Scolaire",
     "image": "images/snk.png",
-    "date": "Oct 2025 - Mai 2026",
+   
     "title": "SNK Wiki",
     "iconName": "question",
     "description": "Site interactif intégrant un système de progression par quiz pour débloquer chaque section de la page.",
     "githubUrl": "https://github.com/Nolan-30/SNK-Wiki",
     "stack": [
-      { "name": "React" },
-      { "name": "Node.js" },
-      { "name": "Express.js" },
-      { "name": "MongoDB" }
-    ]
-  },
-  {
-    "id": 2,
-    "incoming": false,
-    "label": "Projet Scolaire",
-    "image": "images/find-your-doctor.png",
-    "date": "Avr 2026 - Mai 2026",
-    "title": "Find Your Doctor",
-    "iconName": "heart",
-    "description": "Recherche de professionnels de santé à partir de données publiques, avec filtres et géolocalisation des praticiens",
-    "githubUrl": "https://nolan-30.alwaysdata.net/",
-    "stack": [
-      { "name": "HTML" },
-      { "name": "CSS" },
-      { "name": "JavaScript" },
-      { "name": "SQL" },
-      { "name": "PHP" }
+      {
+        "name": "React"
+      },
+      {
+        "name": "Node.js"
+      },
+      {
+        "name": "Express.js"
+      },
+      {
+        "name": "MongoDB"
+      }
     ]
   },
   {
@@ -39,15 +48,21 @@
     "incoming": false,
     "label": "Projet Scolaire",
     "image": "images/clicker.png",
-    "date": "Mar 2026 - Mar 2026",
+ 
     "title": "Jeu Clicker",
     "iconName": "click",
     "description": "Clicker-Swiper de gestion de buzz. Transformez chaque décision politique en levier d'influence.",
     "githubUrl": "https://github.com/Trisrav/trumposaur",
     "stack": [
-      { "name": "Next.js" },
-      { "name": "Typescript" },
-      { "name": "Tailwind" }
+      {
+        "name": "Next.js"
+      },
+      {
+        "name": "Typescript"
+      },
+      {
+        "name": "Tailwind"
+      }
     ]
   },
   {
@@ -55,15 +70,21 @@
     "incoming": false,
     "label": "Projet Personnel",
     "image": "images/portfolio.png",
-    "date": "Fev 2026 - Mar 2026",
+   
     "title": "Portfolio",
     "iconName": "code",
     "description": "Développement d'un site vitrine présentant mes projets, mes compétences techniques et créatives.",
     "githubUrl": "https://nolan-30.github.io/Portfolio/",
     "stack": [
-      { "name": "HTML" },
-      { "name": "CSS" },
-      { "name": "JavaScript" }
+      {
+        "name": "HTML"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "JavaScript"
+      }
     ]
   },
   {
@@ -71,15 +92,22 @@
     "incoming": false,
     "label": "Projet Personnel",
     "image": "images/penthouse.png",
-    "date": "Oct 2025 - Jan 2026",
+   
+
     "title": "Penthouse",
     "iconName": "eye",
     "description": "Réalisation d'une vitrine immersive sublimant l'intrigue, les personnages et les trois saisons de l'œuvre.",
     "githubUrl": "https://nolan-30.github.io/Penthouse/",
     "stack": [
-      { "name": "HTML" },
-      { "name": "CSS" },
-      { "name": "AOS" }
+      {
+        "name": "HTML"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "AOS"
+      }
     ]
   },
   {
@@ -87,17 +115,27 @@
     "incoming": false,
     "label": "Projet Scolaire",
     "image": "images/power-of-memory.png",
-    "date": "Sep 2025 - Dec 2025",
+  
     "title": "Power Of Memory",
     "iconName": "brain",
     "description": "Conception en équipe d'une plateforme alliant profils personnalisés et classements dynamiques.",
     "githubUrl": "https://github.com/Nolan-30/Power-of-Memory",
     "stack": [
-      { "name": "HTML" },
-      { "name": "CSS" },
-      { "name": "JavaScript" },
-      { "name": "SQL" },
-      { "name": "PHP" }
+      {
+        "name": "HTML"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "SQL"
+      },
+      {
+        "name": "PHP"
+      }
     ]
   }
 ]

@@ -1,10 +1,7 @@
 import { useRef } from "react";
 import "./styles/Project.css";
-import GradientText from "../animations/GradientText";
-import StarBorder from "../animations/StarBorder";
-import BorderGlow from "../animations/BorderGlow";
+
 import FadeContent from "../animations/FadeContent";
-import GlareHover from "../animations/GlareHover";
 
 // import Icon
 import NavalBattle from "../icons/NavalBattle";
@@ -108,8 +105,7 @@ export default function ProjectCard({
             )}
 
             <div className="titre-carte">
-              <span className="etiquette-projet">{label}</span>
-              <span className="date-projet">{date}</span>
+              <p>{label}</p>
             </div>
 
             {image && (

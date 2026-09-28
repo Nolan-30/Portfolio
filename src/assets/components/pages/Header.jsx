@@ -11,7 +11,7 @@ const navItems = [
 ];
 
 export default function Header() {
-  const [activeTab, setActiveTab] = useState("projets");
+  const [activeTab, setActiveTab] = useState("accueil");
 
   return (
     <header className="header-container">
@@ -48,7 +48,7 @@ export default function Header() {
                       transition={{
                         type: "spring",
                         stiffness: 380,
-                        damping: 30,
+                        damping: 100,
                       }}
                     />
                   )}
