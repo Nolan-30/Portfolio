@@ -1,16 +1,28 @@
-# React + Vite
+# 🚀 Portfolio — Nolan D'almeida
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur le dépôt de mon portfolio personnel ! ✨
 
-Currently, two official plugins are available:
+Conçu avec une forte sensibilité pour le design frontend, ce site met en valeur mes compétences, mes projets web et mes réalisations avec des animations fluides et réactives.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌟 Aperçu & Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 🌐 **Site en ligne :** https://portfolio-nolan-dalmeida-pearl-six.vercel.app/
+* 🎨 **Design & Ambiance :** Dark Mode Neon, accents Rose & Violet
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack & Outils
+
+### Frontend & UI
+* ⚡ **React.js** — Bibliothèque JavaScript pour une interface dynamique et modulaire.
+* 🎨 **CSS3 Natif** — Stylisation sur-mesure avec Flexbox, CSS Grid et variables CSS.
+* 🌌 **Three.js & OGL** — Arrière-plan 3D dynamique et interactif avec le composant .
+* 🎭 **Framer Motion** — Animations fluides, transitions de composants et effets au survol.
+* 🧩 **React Bits** — Intégration et personnalisation de composants UI interactifs et animés.
+
+### Infrastructure & Backend
+* 📬 **API Contact** — Traitement et réception sécurisée des messages via le formulaire.
+* 📦 **Vite** — Environnement de développement et bundler hyper rapide.
+* 🚀 **Vercel** — Déploiement continu et hébergement.
