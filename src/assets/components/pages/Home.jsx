@@ -142,8 +142,8 @@ export default function Home() {
 
             <StarBorder as="div" color="magenta" speed="5s">
               <motion.a
-                href="CV-Nolan-Dalmeida.pdf"
-                download="CV-Nolan-Dalmeida.pdf"
+                href="/CV-Developpeur-FullStack-Nolan-Dalmeida.pdf"
+                download="CV-Developpeur-FullStack-Nolan-Dalmeida.pdf"
                 className="btn-download"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
