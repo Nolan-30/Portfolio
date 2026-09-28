@@ -11,7 +11,7 @@ import {
   WebGLRenderer,
 } from "three";
 
-import "../styles/animations/FloatingLines.css";
+import "./styles/FloatingLines.css";
 
 const vertexShader = `
 precision highp float;
@@ -400,9 +400,9 @@ export default function FloatingLines({
     const ro =
       typeof ResizeObserver !== "undefined"
         ? new ResizeObserver(() => {
-            if (!active) return;
-            setSize();
-          })
+          if (!active) return;
+          setSize();
+        })
         : null;
 
     if (ro) ro.observe(container);

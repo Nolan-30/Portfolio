@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Renderer, Program, Mesh, Triangle } from "ogl";
-import "../styles/animations/WebThreads.css";
+import "./styles/WebThreads.css";
 
 const hexToRgb = (hex) => {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -304,7 +304,7 @@ const WebThreads = ({
       ctxMap.delete(container);
       try {
         container.removeChild(canvas);
-      } catch {}
+      } catch { }
       gl.getExtension("WEBGL_lose_context")?.loseContext();
     };
   }, []);

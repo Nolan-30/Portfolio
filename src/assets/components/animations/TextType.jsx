@@ -9,7 +9,7 @@ import {
   useCallback,
 } from "react";
 import { gsap } from "gsap";
-import "../styles/animations/TextType.css";
+import "./styles/TextType.css";
 
 const TextType = ({
   text,
@@ -110,7 +110,7 @@ const TextType = ({
 
           setCurrentTextIndex((prev) => (prev + 1) % textArray.length);
           setCurrentCharIndex(0);
-          timeout = setTimeout(() => {}, pauseDuration);
+          timeout = setTimeout(() => { }, pauseDuration);
         } else {
           timeout = setTimeout(() => {
             setDisplayedText((prev) => prev.slice(0, -1));

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
-import "../styles/animations/PillNav.css";
+import "./styles/PillNav.css";
 
 const PillNav = ({
   logo,
@@ -98,7 +98,7 @@ const PillNav = ({
     window.addEventListener("resize", onResize);
 
     if (document.fonts?.ready) {
-      document.fonts.ready.then(layout).catch(() => {});
+      document.fonts.ready.then(layout).catch(() => { });
     }
 
     const menu = mobileMenuRef.current;

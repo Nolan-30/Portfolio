@@ -4,7 +4,6 @@
     "incoming": false,
     "label": "Projet Professionel",
     "image": "images/mbs.png",
-    
     "title": "MBS Plomberie",
     "iconName": "heart",
     "description": "Vitrine web moderne dédiée à un artisan plombier-chauffagiste, conçue pour maximiser la conversion client.",
@@ -22,8 +21,7 @@
     "id": 1,
     "incoming": false,
     "label": "Projet Scolaire",
-    "image": "images/snk.png",
-   
+    "image": "images/snk-test.png",
     "title": "SNK Wiki",
     "iconName": "question",
     "description": "Site interactif intégrant un système de progression par quiz pour débloquer chaque section de la page.",
@@ -48,7 +46,6 @@
     "incoming": false,
     "label": "Projet Scolaire",
     "image": "images/clicker.png",
- 
     "title": "Jeu Clicker",
     "iconName": "click",
     "description": "Clicker-Swiper de gestion de buzz. Transformez chaque décision politique en levier d'influence.",
@@ -70,8 +67,7 @@
     "incoming": false,
     "label": "Projet Personnel",
     "image": "images/portfolio.png",
-   
-    "title": "Portfolio",
+    "title": "Portfolio V1",
     "iconName": "code",
     "description": "Développement d'un site vitrine présentant mes projets, mes compétences techniques et créatives.",
     "githubUrl": "https://nolan-30.github.io/Portfolio/",
@@ -92,8 +88,6 @@
     "incoming": false,
     "label": "Projet Personnel",
     "image": "images/penthouse.png",
-   
-
     "title": "Penthouse",
     "iconName": "eye",
     "description": "Réalisation d'une vitrine immersive sublimant l'intrigue, les personnages et les trois saisons de l'œuvre.",
@@ -115,7 +109,6 @@
     "incoming": false,
     "label": "Projet Scolaire",
     "image": "images/power-of-memory.png",
-  
     "title": "Power Of Memory",
     "iconName": "brain",
     "description": "Conception en équipe d'une plateforme alliant profils personnalisés et classements dynamiques.",

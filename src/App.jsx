@@ -7,41 +7,35 @@ import Home from "./assets/components/pages/Home";
 import Project from "./assets/components/pages/Project";
 
 import Contact from "./assets/components/pages/Contact";
-import FadeContent from "./assets/components/animations/FadeContent";
 import { ScrollProgress } from "./assets/components/animations/ScrollProgress";
-import FloatingLines from "./assets/components/animations/FloatingLines";
-import LightPillar from "./assets/components/animations/LightPillar";
+import GhostFibers from "./assets/components/animations/GhostFibers";
 
 function App() {
   return (
     <Router>
-      <div className="app-wrapper">
+      <div className="app-wrapper" style={{ position: "relative", minHeight: "100vh", overflow: "hidden" }}>
         <ScrollProgress />
 
-        {/* Ajout du background LightPillar  */}
+        {/* Arrière-plan GhostFibers */}
         <div
           style={{
             width: "100%",
-            height: "1200px",
+            height: "100%",
             position: "absolute",
             top: 0,
             left: 0,
+            zIndex: 0,
             pointerEvents: "none",
           }}
         >
-          <LightPillar
-            topColor="#5227FF"
-            bottomColor="#FF9FFC"
-            intensity={1}
-            rotationSpeed={0.3}
-            glowAmount={0.002}
-            pillarWidth={3}
-            pillarHeight={0.4}
-            noiseIntensity={0.5}
-            pillarRotation={25}
-            interactive={false}
-            mixBlendMode="screen"
-            quality="high"
+          <GhostFibers
+            lineColor="#b000dc"
+            glowColor="#781193"
+            brightness={1.5}
+            glowIntensity={1}
+            speed={0.25}
+            scale={2}
+            layers={2}
           />
         </div>
 
