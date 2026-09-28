@@ -20,7 +20,7 @@ Conçu avec une forte sensibilité pour le design frontend, ce site met en valeu
 * 🎨 **CSS3 Natif** — Stylisation sur-mesure avec Flexbox, CSS Grid et variables CSS.
 * 🌌 **Three.js & OGL** — Arrière-plan 3D dynamique et interactif avec le composant .
 * 🎭 **Framer Motion** — Animations fluides, transitions de composants et effets au survol.
-* * 🧩 **React Bits** — Intégration et personnalisation de composants UI interactifs et animés.
+* 🧩 **React Bits** — Intégration et personnalisation de composants UI interactifs et animés.
 
 ### Infrastructure & Backend
 * 📬 **API Contact** — Traitement et réception sécurisée des messages via le formulaire.
