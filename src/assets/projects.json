@@ -3,8 +3,8 @@
     "id": 0,
     "incoming": false,
     "label": "Projet Professionel",
-    "image": "images/mbs.png",
-    "title": "MBS Plomberie",
+    "image": "images/jb.png",
+    "title": "JB Plomberie",
     "iconName": "heart",
     "description": "Vitrine web moderne dédiée à un artisan plombier-chauffagiste, conçue pour maximiser la conversion client.",
     "githubUrl": "https://mbs-zeta.vercel.app/",
@@ -17,30 +17,7 @@
       }
     ]
   },
-  {
-    "id": 1,
-    "incoming": false,
-    "label": "Projet Scolaire",
-    "image": "images/snk-test.png",
-    "title": "SNK Wiki",
-    "iconName": "question",
-    "description": "Site interactif intégrant un système de progression par quiz pour débloquer chaque section de la page.",
-    "githubUrl": "https://github.com/Nolan-30/SNK-Wiki",
-    "stack": [
-      {
-        "name": "React"
-      },
-      {
-        "name": "Node.js"
-      },
-      {
-        "name": "Express.js"
-      },
-      {
-        "name": "MongoDB"
-      }
-    ]
-  },
+
   {
     "id": 3,
     "incoming": false,

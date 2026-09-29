@@ -3,15 +3,13 @@ import "./styles/Project.css";
 
 import FadeContent from "../animations/FadeContent";
 
-// import Icon
-import NavalBattle from "../icons/NavalBattle";
+// imports d'icon
+
 import Brain from "../icons/Brain";
 import Eye from "../icons/Eye";
-import Skull from "../icons/Skull";
 import Code from "../icons/Code";
 import Heart from "../icons/Heart";
 import Question from "../icons/Question";
-import Sparkles from "../icons/Sparkles";
 import Link from "../icons/Link";
 import Click from "../icons/Click";
 import Rocket from "../icons/Rocket";
@@ -46,7 +44,7 @@ export default function ProjectCard({
 
         {/* fin du test */}
 
-        <div style={{ padding: "2em" }}>
+        <div style={{ padding: "2em" }} className="project-content">
           <article
             className="carte-projet"
             style={{ margin: 0, height: "100%" }}
@@ -57,50 +55,41 @@ export default function ProjectCard({
               target="blank"
               rel="noreferrer"
             ></a>
-            {iconName === "boat" && (
-              <div className="icons">
-                <NavalBattle size={80} color="#dd00ff" />
-              </div>
-            )}
 
             {iconName === "brain" && (
               <div className="icons">
-                <Brain size={80} color="#dd00ff" />
+                <Brain size={60} color="#dd00ff" />
               </div>
             )}
             {iconName === "eye" && (
               <div className="icons">
-                <Eye size={80} color="#dd00ff" />
+                <Eye size={60} color="#dd00ff" />
               </div>
             )}
-            {iconName === "skull" && (
-              <div className="icons">
-                <Skull size={80} color="#dd00ff" />
-              </div>
-            )}
+
             {iconName === "heart" && (
               <div className="icons">
-                <Heart size={80} color="#dd00ff" />
+                <Heart size={60} color="#dd00ff" />
               </div>
             )}
             {iconName === "code" && (
               <div className="icons">
-                <Code size={80} color="#dd00ff" />
+                <Code size={60} color="#dd00ff" />
               </div>
             )}
             {iconName === "question" && (
               <div className="icons">
-                <Question size={80} color="#dd00ff" />
+                <Question size={60} color="#dd00ff" />
               </div>
             )}
             {iconName === "sparkles" && (
               <div className="icons">
-                <Sparkles size={80} color="#dd00ff" />
+                <Sparkles size={60} color="#dd00ff" />
               </div>
             )}
             {iconName === "click" && (
               <div className="icons">
-                <Click size={80} color="#dd00ff" />
+                <Click size={60} color="#dd00ff" />
               </div>
             )}
 
@@ -118,7 +107,9 @@ export default function ProjectCard({
               <h3>{title}</h3>
             </span>
 
-            <p>{description}</p>
+            <div className="description">
+              <p>{description}</p>
+            </div>
 
             <div className="stack-used">
               {stack &&
