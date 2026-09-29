@@ -21,6 +21,7 @@ Conçu avec une forte sensibilité pour le design frontend, ce site met en valeu
 * 🌌 **Three.js & OGL** — Arrière-plan 3D dynamique et interactif avec le composant .
 * 🎭 **Framer Motion** — Animations fluides, transitions de composants et effets au survol.
 * 🧩 **React Bits** — Intégration et personnalisation de composants UI interactifs et animés.
+* 🎯 **Hover Icons** — Icônes animées et interactives issues de [itshover.com](https://www.itshover.com/icons).
 
 ### Infrastructure & Backend
 * 📬 **API Contact** — Traitement et réception sécurisée des messages via le formulaire.
