@@ -1,18 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./styles/Footer.css";
-import SplitText from "../animations/SplitText";
-import { Dock, DockIcon } from "../animations/Dock";
-
-import Searching from "../icons/Searching";
 import LinkedIn from "../icons/LinkedIn";
 import Github from "../icons/Github";
 
 export default function Footer() {
-  const handleAnimationComplete = () => {
-    console.log("All letters have animated!");
-  };
-
   return (
     <footer id="contact">
       <motion.div

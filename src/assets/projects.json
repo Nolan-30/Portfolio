@@ -5,9 +5,9 @@
     "label": "Projet Professionel",
     "image": "images/jb.png",
     "title": "JB Plomberie",
-    "iconName": "heart",
+    "iconName": "mapicon",
     "description": "Vitrine web moderne dédiée à un artisan plombier-chauffagiste, conçue pour maximiser la conversion client.",
-    "githubUrl": "https://mbs-zeta.vercel.app/",
+    "githubUrl": "https://jb-plumbing-chaufagiste.vercel.app/",
     "stack": [
       {
         "name": "React"
@@ -108,4 +108,6 @@
       }
     ]
   }
+
+
 ]

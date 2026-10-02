@@ -51,8 +51,8 @@ export default function Project() {
             </GradientText>
           </h2>
           <h3 className="title-sous-texte">
-            Découvrez une sélection de mes derniers projets, mêlant interfaces
-            modernes, fluides et centrées sur l’utilisateur.
+            Découvrez une sélection de mes projets, mêlant interfaces modernes,
+            fluides et centrées sur l’utilisateur.
           </h3>
         </section>
 

@@ -13,83 +13,43 @@ import Question from "../icons/Question";
 import Link from "../icons/Link";
 import Click from "../icons/Click";
 import Rocket from "../icons/Rocket";
+import Searching from "../icons/Searching";
+import MapIcon from "../icons/MapIcon";
+
+const iconsList = {
+  brain: Brain,
+  eye: Eye,
+  code: Code,
+  heart: Heart,
+  question: Question,
+  click: Click,
+  searching: Searching,
+  mapicon: MapIcon,
+  mappinicon: MapIcon, // Sécurité pour la casse dans projects.json
+};
 
 export default function ProjectCard({
   label,
   image,
-  date,
   title,
-  iconLink,
   iconName,
   description,
   githubUrl,
   stack,
 }) {
+  const IconComponent = iconsList[iconName?.toLowerCase()];
   return (
     <div className="projet-item">
       <FadeContent duration={2000} easing="ease-out" initialOpacity={0}>
-        {/* <BorderGlow
-          edgeSensitivity={30}
-          glowColor="40 80 80"
-          backgroundColor="#060010"
-          borderRadius={28}
-          glowRadius={40}
-          glowIntensity={1}
-          coneSpread={25}
-          animated={false}
-          colors={["#c084fc", "#f472b6", "#ffffff"]}
-        > */}
-
-        {/* test glarehover sur les carte de projet */}
-
-        {/* fin du test */}
-
         <div style={{ padding: "2em" }} className="project-content">
           <article
             className="carte-projet"
             style={{ margin: 0, height: "100%" }}
           >
-            {/* ICON DE PROJET */}
-            <a
-              href="https://github.com/Nolan-30/Power-of-Memory/tree/Power-Of-Memory"
-              target="blank"
-              rel="noreferrer"
-            ></a>
-
-            {iconName === "brain" && (
+            {/* ICONS */}
+            {IconComponent && (
               <div className="icons">
-                <Brain size={60} color="#dd00ff" />
-              </div>
-            )}
-            {iconName === "eye" && (
-              <div className="icons">
-                <Eye size={60} color="#dd00ff" />
-              </div>
-            )}
-
-            {iconName === "heart" && (
-              <div className="icons">
-                <Heart size={60} color="#dd00ff" />
-              </div>
-            )}
-            {iconName === "code" && (
-              <div className="icons">
-                <Code size={60} color="#dd00ff" />
-              </div>
-            )}
-            {iconName === "question" && (
-              <div className="icons">
-                <Question size={60} color="#dd00ff" />
-              </div>
-            )}
-            {iconName === "sparkles" && (
-              <div className="icons">
-                <Sparkles size={60} color="#dd00ff" />
-              </div>
-            )}
-            {iconName === "click" && (
-              <div className="icons">
-                <Click size={60} color="#dd00ff" />
+                <IconComponent size={60} color="#dd00ff" />
               </div>
             )}
 
@@ -104,7 +64,9 @@ export default function ProjectCard({
             )}
 
             <span className="degrader-violet">
-              <h3>{title}</h3>
+              <div className="name">
+                <h3>{title}</h3>
+              </div>
             </span>
 
             <div className="description">

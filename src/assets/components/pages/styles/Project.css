@@ -196,6 +196,16 @@
     letter-spacing: -1px;
   }
 
+  .titre-carte,
+  .name {
+    justify-content: center;
+  }
+
+  .description {
+    align-items: center;
+    font-size: 1rem;
+  }
+
   .title-sous-texte {
     margin-top: -10%;
     font-size: 1rem;
@@ -207,7 +217,30 @@
     height: auto;
   }
 
+  .description p {
+    margin-left: 7%;
+    text-align: center;
+
+    min-width: 200px;
+    max-width: 200px;
+
+    font-size: 0.75rem;
+  }
+
   .grille-projets {
     gap: 1.2rem;
+  }
+
+  .stack-used {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 0.75rem;
+  }
+
+  .lien-projet {
+    /* centrer */
+    display: flex;
+    justify-content: center;
   }
 }

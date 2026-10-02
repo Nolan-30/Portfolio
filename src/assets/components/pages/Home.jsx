@@ -132,13 +132,17 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <a href="#" className="icon-link">
-              <img src="images/react.png" alt="react" />
-            </a>
+            <StarBorder as="div" color="magenta" speed="5s">
+              <a href="#" className="icon-link">
+                <img src="images/react.png" alt="react" />
+              </a>
+            </StarBorder>
 
-            <a href="#" className="icon-link">
-              <img src="images/tailwind.png" alt="Tailwind" />
-            </a>
+            <StarBorder as="div" color="magenta" speed="5s">
+              <a href="#" className="icon-link">
+                <img src="images/tailwind.png" alt="Tailwind" />
+              </a>
+            </StarBorder>
 
             <StarBorder as="div" color="magenta" speed="5s">
               <motion.a

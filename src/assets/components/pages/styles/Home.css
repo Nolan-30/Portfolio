@@ -170,6 +170,7 @@ h1 {
   display: flex;
   align-items: center;
   gap: 2.5rem;
+  margin-left: 5%;
 }
 
 .languages-icons img {
@@ -271,6 +272,7 @@ h1 {
 
   .languages-icons {
     gap: 2rem;
+    margin-left: 0;
   }
   .icon-link {
     width: 40px;
