@@ -7,7 +7,7 @@
     "title": "Plomberie",
     "iconName": "mapicon",
     "description": "Vitrine web moderne dédiée à un artisan plombier-chauffagiste, conçue pour maximiser la conversion client.",
-    "githubUrl": "https://jb-plumbing-chaufagiste.vercel.app/",
+    "githubUrl": "https://demo-plomberie.vercel.app/",
     "stack": [
       {
         "name": "React"
