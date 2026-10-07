@@ -119,7 +119,7 @@ h1 {
   font-weight: 900;
   line-height: 1;
   letter-spacing: -2px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: #fff;
 }
 
@@ -222,6 +222,14 @@ h1 {
     flex-direction: column;
     justify-content: center;
   }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .welcome-msg {
+    margin: 0;
+  }
   .weight-bold {
     font-size: 1.1rem;
   }
@@ -260,10 +268,12 @@ h1 {
 
   .subtitle {
     font-size: 0.8rem;
+
     margin-left: -5%;
   }
 
   .grp-btn {
+    margin-top: -15%;
     font-size: 0.5rem;
   }
   .bouton-secondaire {
